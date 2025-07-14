@@ -261,7 +261,6 @@ LocalS3 includes comprehensive test scripts to verify functionality:
 - `test_aws_quick.sh` - Quick AWS CLI verification
 - `test_aws_cli_complete.sh` - Full AWS CLI compatibility test
 - `setup_aws_cli.sh` - Sets up AWS CLI with convenient aliases
-```
 
 ## License
 
