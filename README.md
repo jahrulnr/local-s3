@@ -19,6 +19,24 @@ LocalS3 is a lightweight, S3-compatible object storage server written in Go. It 
 - Delete bucket (`DELETE /{bucket}`)
 - List objects (`GET /{bucket}`)
 
+## Testing
+
+LocalS3 includes comprehensive unit tests to ensure reliability and compatibility.
+
+### Running Tests
+
+To run all unit tests:
+
+```bash
+make test-unit
+```
+
+This will run tests for the following packages:
+- `internal/auth` - Authentication and AWS Signature V4 verification
+- `internal/config` - Configuration loading and validation 
+- `internal/storage` - File system storage backend
+- `internal/handlers` - HTTP request handling
+
 ### Object Operations
 - Put object (`PUT /{bucket}/{key}`)
 - Get object (`GET /{bucket}/{key}`)

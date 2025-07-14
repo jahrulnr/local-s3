@@ -1,7 +1,7 @@
 # LocalS3 Makefile
 # Comprehensive build and test automation
 
-.PHONY: help build clean run stop test test-all test-basic test-aws test-quick setup dev docker docker-build docker-run install deps
+.PHONY: help build clean run stop test test-unit test-all test-basic test-aws test-quick setup dev docker docker-build docker-run install deps
 
 # Default target
 .DEFAULT_GOAL := help
@@ -90,6 +90,10 @@ stop: ## Stop the LocalS3 server
 
 # Test targets
 test: test-basic ## Run basic tests (alias for test-basic)
+
+test-unit: ## Run Go unit tests
+	@echo "$(CYAN)Running unit tests...$(RESET)"
+	@go test ./... -v
 
 test-basic: ## Run basic HTTP API tests
 	@echo "$(BLUE)Running basic tests...$(RESET)"
