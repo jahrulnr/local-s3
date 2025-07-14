@@ -1,0 +1,23 @@
+# Binaries
+locals3
+locals3.exe
+
+# Environment files
+.env
+
+# Go specific
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+test.json
+downloaded_*.json

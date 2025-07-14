@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  locals3:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - DATA_DIR=/data
+      - ACCESS_KEY=test
+      - SECRET_KEY=test123456789
+      - REGION=ap-southeast-3
+      - LOG_LEVEL=debug
+      - BASE_DOMAIN=localhost:3000
+      - DISABLE_AUTH=true
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

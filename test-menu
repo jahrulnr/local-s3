@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# LocalS3 Test Menu Wrapper
+# This script runs the test menu from the root directory
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPTS_DIR="$SCRIPT_DIR/scripts"
+
+# Change to the scripts directory and run the menu
+cd "$SCRIPTS_DIR"
+./test_menu.sh
