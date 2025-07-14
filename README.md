@@ -58,7 +58,7 @@ make demo
 
 ```bash
 # Clone and build
-git clone <repository>
+git clone https://github.com/jahrulnr/local-s3.git
 cd LocalS3
 go mod tidy
 go build -o locals3
